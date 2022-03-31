@@ -67,7 +67,7 @@ kubectl create -f configmap.yaml
 ```
 kubectl get pods
 ```
-Copy the NAME of the three pods somewhere because we will use them in the next step. This is also where you can see the status of your pods, if the status of any of the pods is ContainerCreating, wait for a minute & type the above command again to see if your pods are ready or not. 
+Copy the NAME of the three pods somewhere because we will use them in the next step. This is also where you can see the status of your pods, if the status of any of the pods is `ContainerCreating`, wait for a minute & type the above command again to see if your pods are ready or not. 
 
 **8.** Now we will enable port forwarding on all the pods so that we can interact with the kubernetes cluster from localhost - this basically maps the container port to a local system port of your choice. Run the following in three different terminal windows:
 
