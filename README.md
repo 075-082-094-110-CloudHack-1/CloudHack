@@ -2,10 +2,10 @@ This is in regards to the Cloud Computing Project for 6th Semester CSE.
 Our Problem Statement: [Problem Statement 1](https://github.com/Teaching-Assistants-of-Cloud-Computing/CloudHack/tree/master/Problem%20Statement%201)
 ---
 ## Team
-1. Chaitanya Singh — PES2UG19CS094
-2. Dev Prakash — PES2UG19CS110
-3. Basanagouda S Hadimani — PES2UG19CS082
-4. Atul Anurag — PES2UG19CS075
+1. PES2UG19CS094 — Chaitanya Singh
+2. PES2UG19CS110 — Dev Prakash
+3. PES2UG19CS082 — Basanagouda S Hadimani
+4. PES2UG19CS075 — Atul Anurag
 
 ---
 ## File Structure
