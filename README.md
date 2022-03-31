@@ -39,35 +39,57 @@ Make sure you have the following tools installed in your system:
 3. Minikube [Ubuntu](https://minikube.sigs.k8s.io/docs/start/)
 
 ## How to Run
-1. Clone the repository by typing the following in your terminal
-```git clone https://github.com/075-082-094-110-CloudHack-1/CloudHack.git```
-2. Open a terminal inside `Cloudhack` folder & start a minikube cluster by typing the following
-```minikube start```
-3. Run the `secret.yaml` file so that the secrets can be referenced in our deployments:
-```kubectl create -f secret.yaml```
-4. Run the Deployments by typing the following
-```kubectl create -f deployments.yaml```
-5. Deploy the services by typing the following
-```kubectl create -f services.yaml```
-6. Run the `configmap.yaml` for mongo-express to use as a reference: 
-```kubectl create -f configmap.yaml```
-7. Get the names of your pods by typing:
-```kubectl get pods``
+**1.** Clone the repository by typing the following in your terminal
+```
+git clone https://github.com/075-082-094-110-CloudHack-1/CloudHack.git
+```
+**2.** Open a terminal inside `Cloudhack` folder & start a minikube cluster by typing the following
+```
+minikube start
+```
+**3.** Run the `secret.yaml` file so that the secrets can be referenced in our deployments:
+```
+kubectl create -f secret.yaml
+```
+**4.** Run the Deployments by typing the following
+```
+kubectl create -f deployments.yaml
+```
+**5.** Deploy the services by typing the following
+```
+kubectl create -f services.yaml
+```
+**6.** Run the `configmap.yaml` for mongo-express to use as a reference: 
+```
+kubectl create -f configmap.yaml
+```
+**7.** Get the names of your pods by typing:
+```
+kubectl get pods
+```
 Copy the names of the 3 pods
-8. Now we will enable port forwarding on all the pods so that we can interact with the kubernetes cluster from localhost. Do these in three different terminal windows.
+**8.** Now we will enable port forwarding on all the pods so that we can interact with the kubernetes cluster from localhost. Do these in three different terminal windows.
 
 For Flask-webapp:
-```kubectl port-forward pods/flask-app-deployment-(something) 5001:5001```
+```
+kubectl port-forward pods/flask-app-deployment-(something) 5001:5001
+```
 For Flask-webapp:
-```kubectl port-forward pods/mongo-express-deployment-(something) 8081:8081```
+```
+kubectl port-forward pods/mongo-express-deployment-(something) 8081:8081
+```
 For Flask-webapp:
-```kubectl port-forward pods/mongodb-deployment-(something) 27017:27017```
+```
+kubectl port-forward pods/mongodb-deployment-(something) 27017:27017
+```
 
-9. Open your web-browser & type the relevant localhost address in your url bar
+**9.** Open your web-browser & type the relevant localhost address in your url bar
 - `localhost:5001` to access the Flask App
 - `localhost:8081` to access Mongo Express
 
-10. To terminate, press `Ctrl + C` & type the following to stop the minikube cluster:
-```minikube stop```
+**10.** To terminate, press `Ctrl + C` & type the following to stop the minikube cluster:
+```
+minikube stop
+```
 
 ## Fin.
