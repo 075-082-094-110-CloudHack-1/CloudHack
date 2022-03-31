@@ -99,7 +99,7 @@ spec:
         image: thelastcube/flask-app:latest
         ports:
         - containerPort: 5001
-        imagePullPolicy: Never                # to allow use of locally built images
+        imagePullPolicy: Always
         env:
         - name: user
           valueFrom:
