@@ -7,7 +7,6 @@ Our Problem Statement: [Problem Statement 1](https://github.com/Teaching-Assista
 3. PES2UG19CS082 — Basanagouda S Hadimani
 4. PES2UG19CS075 — Atul Anurag
 
----
 ## File Structure
 ```
 .
@@ -30,7 +29,6 @@ The `app` directory contains all the code pertaining to the flask app. You are o
 The `flask-app-image.dockerfile` should specify the insructions to assemble the docker image for the flask app.  
 The `.yaml` files in the root directory are to specify the kubernetes manifests that will bring up your microservices deployment of the problem statement.
 
----
 ## Pre-Requisites:
 
 **Note: The walkthrough in this README is for Ubuntu**
@@ -39,8 +37,6 @@ Make sure you have the following tools installed in your system:
 1. Docker [Ubuntu](https://docs.docker.com/engine/install/ubuntu/#:~:text=Install%20from%20a%20package&text=Go%20to%20https%3A%2F%2Fdownload,version%20you%20want%20to%20install) 
 2. Kubernetes [Ubuntu](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 3. Minikube [Ubuntu](https://minikube.sigs.k8s.io/docs/start/)
-
----
 
 ## How to Run
 1. Clone the repository by typing the following in your terminal
